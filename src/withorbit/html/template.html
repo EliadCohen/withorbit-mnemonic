@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta property="orbit:color" content="{{ color }}">
+    <script type="module" src="https://js.withorbit.com/orbit-web-component.js"></script>
+    <style>
+        body {
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #fafafa;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.3;
+            margin-top: 2rem;
+        }
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; }
+        h3 { font-size: 1.25rem; }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+            background: #f0f0f0;
+            padding: 0.15em 0.3em;
+            border-radius: 3px;
+        }
+        pre code {
+            display: block;
+            padding: 1em;
+            overflow-x: auto;
+        }
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin-left: 0;
+            padding-left: 1em;
+            color: #555;
+        }
+        img { max-width: 100%; }
+        orbit-reviewarea {
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+{{ content }}
+</body>
+</html>
